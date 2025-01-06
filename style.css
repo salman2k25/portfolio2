@@ -355,83 +355,7 @@ nav li a:hover
 .skills-container li.html::after{
     animation-name: html;
 }
-@keyframes html{
-    to{
-        width: 85%;
-    }
-}
 
-.skills-container li.css::after{
-    animation-name: css;
-}
-@keyframes css{
-    to{
-        width: 75%;
-    }
-}
-
-.skills-container li.bootstrap::after{
-    animation-name: bootstrap;
-}
-@keyframes bootstrap{
-    to{
-        width: 45%;
-    }
-}
-
-.skills-container li.js::after{
-    animation-name: js;
-}
-@keyframes js{
-    to{
-        width: 69%;
-    }
-}
-
-.skills-container li.node::after{
-    animation-name: node;
-}
-@keyframes node{
-    to{
-        width: 47%;
-    }
-}
-
-.skills-container li.php::after{
-    animation-name: php;
-}
-@keyframes php{
-    to{
-        width: 82%;
-    }
-}
-
-.skills-container li.jquery::after{
-    animation-name: jquery;
-}
-@keyframes jquery{
-    to{
-        width: 30%;
-    }
-}
-
-.skills-container li.express::after{
-    animation-name: express;
-}
-@keyframes express{
-    to{
-        width: 22%;
-    }
-}
-
-.skills-container li.react::after{
-    animation-name: react;
-}
-@keyframes react{
-    to{
-        width: 82%;
-    }
-}
 
 
 /* skill end */
@@ -573,75 +497,103 @@ textarea{
 
 /* footer end */
 /* responsive start */
-@media (max-width: 992px){
-    .bannaer-section{
-        flex-direction: column;
+@media (max-width: 600px) {
+    .p-heading {
+        font-size: 3rem;
     }
-    .bannaer-section article{
-        width: 50%;
-        display: flex;
-        flex-direction: column; 
+    .p-description, .card-description, .contact-heading {
+        font-size: 1.4rem;
+    }
+    .skills-container li {
+        font-size: 1.5rem;
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .p-heading {
+        font-size: 2.5rem;
+    }
+    .btn, .contact-btn {
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .card-container, .card-containers2 {
+        flex-direction: column;
         align-items: center;
-        margin-bottom: 5rem;
-    }
-    .card-container{
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        gap: 2rem;
     }
 
-}
-@media (max-width: 768px){
-    .card-container{
-        width: 80%;
-    }
-    .archives{
-        min-height: auto;
-    }
-    .contact-section{
-        min-height: auto;
-    }
-}
-@media (max-width: 600px){
-    html{
-        font-size: 48%;
-    }
-    header { 
-        flex-direction: column;
-    }
-    nav ul{
-        padding-left: 2.5rem;
-    }
-    nav li{
-        display: block;
-        margin-right: 0;
-        margin: 1rem 0rem;
-    }
-
-    .bannaer-section{
-        min-height: auto;
-    }
-    .bannaer-section article{
+    .card, .card2 {
+        margin: 1rem;
         width: 90%;
     }
-    .card-container{
-        width: 90%;
-    }
+}
 
-    .archives-container-ul{
-        flex-wrap: wrap;
-    }
-
-    #contact-form{
-        width: 90%;
-    }
-    .form-control{
+@media (max-width: 600px) {
+    header {
         flex-direction: column;
+        padding: 1rem;
+    }
+
+    nav li {
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+    }
+
+    .nav-h {
+        font-size: 3rem;
     }
 }
-@media (max-width: 400px){
-    
+
+@media (max-width: 600px) {
+    .img1, .archives-img, .image-style {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    #contact-form, .form-control {
+        width: 90%;
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .fs1, .fs2, .fs3, .fs4 {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .p-heading {
+        font-size: 2rem;
+    }
+
+    nav li {
+        font-size: 1.5rem;
+    }
+
+    .btn, .contact-btn {
+        padding: 0.6rem 0.8rem;
+        font-size: 1.4rem;
+    }
+
+    input, textarea {
+        font-size: 1.4rem;
+    }
 }
 
 /* responsive end */
