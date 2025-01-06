@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator design</title>
+    <link rel="stylesheet" href="36.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="card">
+        <div class="calc-head">
+              <input type="text" id="result" maxlength="20">
+        </div>
+        <div class="calc-body">
+            <div>
+                <input type="button" class="btn" value="C">
+                <input type="button" class="btn" value="+/-">
+                <input type="button" class="btn" value="%">
+                <input type="button" class="btn btn-op" value="/">
+            </div>
+            <div>
+                <input type="button" class="btn" value="7">
+                <input type="button" class="btn" value="8">
+                <input type="button" class="btn" value="9">
+                <input type="button" class="btn btn-op" value="X">
+            </div>
+            <div>
+                <input type="button" class="btn" value="4">
+                <input type="button" class="btn" value="5">
+                <input type="button" class="btn" value="6">
+                <input type="button" class="btn btn-op" value="-">
+            </div>
+            <div>
+                <input type="button" class="btn" value="1">
+                <input type="button" class="btn" value="2">
+                <input type="button" class="btn" value="3">
+                <input type="button" class="btn btn-op" value="+">
+            </div>
+
+            <div>
+                <input type="button" class="btn" value="0">
+                <input type="button" class="btn" value=".">
+                <input type="button" class="btn" value="DEL">
+                <input type="button" class="btn btn-eq" value="=">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <div class="about">
+        <input type="button" class="btn-about" value="About" >
+    </div> -->
+
+    <script>
+    // JavaScript code for calculator functionality
+
+    // Get the display input element
+    const display = document.getElementById('result');
+
+    // Get all buttons
+    const buttons = document.querySelectorAll('.btn');
+
+    // Function to handle button clicks
+    buttons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            const value = e.target.value;
+            
+            if (value === 'C') {
+                // Clear the display
+                display.value = '';
+            } else if (value === 'DEL') {
+                // Delete the last character
+                display.value = display.value.slice(0, -1);
+            } else if (value === '=') {
+                try {
+                    // Evaluate the expression
+                    display.value = eval(display.value.replace('X', '*').replace('%', '/100'));
+                } catch {
+                    // Handle invalid expressions
+                    display.value = 'Error';
+                }
+            } else if (value === '+/-') {
+                // Change the sign of the current number
+                if (display.value) {
+                    display.value = display.value.startsWith('-') ? display.value.slice(1) : '-' + display.value;
+                }
+            } else {
+                // Append the clicked button's value to the display
+                display.value += value;
+            }
+        });
+    });
+    </script>
+</body>
+</html>

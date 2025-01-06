@@ -1,0 +1,92 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+h1
+{
+    text-align: center;
+}
+
+.card
+{
+    margin: 0 auto;
+    max-width: 350px;
+    background-color: rgb(160, 241, 214);
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 0px 4px 8px 0px black;
+    font-size: 0;
+}
+
+.card:hover
+{
+    box-shadow: 0 8px 32px 0 rgb(37, 33, 33);
+}
+
+.calc-head #result
+{
+    height: 100px;
+    width: 350px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: right;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 0 5px;
+    letter-spacing: 1px;
+    background-color: rgb(171, 246, 246);
+}
+.btn
+{
+    width: 87px;
+    height: 70px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgb(186, 159, 159);
+    color: rgb(10, 7, 7);
+}
+.btn-op
+{
+    background-color: yellowgreen;
+}
+
+.btn:hover
+{
+    background-color: rgb(16, 232, 236);
+}
+.btn-eq
+{
+    background-color: rgb(235, 235, 11);
+}
+
+.btn-about
+{
+    text-align: center;
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    width: 87px;
+    height: 70px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgb(153, 217, 239);
+    color: rgb(10, 7, 7);
+}
+
+.btn-about:hover
+{
+    background-color: greenyellow;
+    color: blue;
+    text-decoration: underline;
+}
+
+.hh1
+{
+   
+    font-style: italic;
+}
+

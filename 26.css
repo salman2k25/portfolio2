@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(213, 209, 228);
+    font-family: 'Times New Roman', Times, serif;
+}
+.cotainer
+{
+    padding: 20px;
+    max-width: 1000px;
+    background-color: rgb(196, 242, 242);
+    margin: 0 auto;
+}
+.img1
+{
+    float: left;
+    width: 100px;
+    height: 120px;
+    border: 3px solid white;
+    border-radius: 70%;
+}
+.hh1
+{
+     float: left;
+     padding: 30px;
+     font-family: 'Times New Roman', Times, serif;
+     font-style: italic;
+     
+}
+.hh1,.hhc,.psl,.wsl,.ict,.reference-left,.honors-left,.key-skill-left,.education-left,.bsc1,.bsc2,.msc1,.msc2
+{
+    color: rgb(27, 27, 230);
+}
+.hhc
+{
+     float: right;
+     padding: 30px;
+}
+.hhc a
+{
+    text-decoration: none;
+    font-weight: bold;
+}
+.hhc a:hover
+{
+    text-decoration: underline;
+    color: tomato;
+}
+.div_clear
+{
+    clear: both; 
+}
+hr{
+    border: solid black 2px;
+    margin;5px;
+}
+
+
+.ps-content,.ws-content,.key-skill,.educaton-content,.honors-content,.reference-content
+{
+    margin: 10px;
+    
+   
+}
+
+.ps
+{
+
+}
+
+.psl,.wsl,.key-skill-left,.education-left,.reference-left,.honors-left
+{
+    width: 30%;
+    float: left;
+
+}
+
+.psr,.wsr,.key-skill-right,.honors-right
+{
+    width: 70%;
+    float: left;
+
+}
+.education-middle,.reference-middle
+{
+    width: 35%;
+    float: left;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.education-right,.reference-right
+{
+    width: 35%;
+    float: left;
+    padding-left: 25px;
+    box-sizing: border-box;
+}
+
+.common-hr
+{
+    border: solid rgb(12, 11, 11) 1px;
+    border-bottom: none;
+    width: 100%;
+    margin: 0 auto;
+}
+.footer1
+{
+    background-color: rgb(16, 32, 29);
+    text-align: center;
+    padding: 10px;
+}
+
+.footer1 a
+{
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+}
+
+.footer1 a:hover
+{
+   color:blue;
+   background-color: rgb(252, 249, 249);
+   border-radius: 5px;
+   text-decoration: underline;
+}
+
+.footer1 p
+{
+    color: white;
+    text-decoration: none;
+    margin-top: 30px;
+}

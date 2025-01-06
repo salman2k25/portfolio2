@@ -1,0 +1,212 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f0f8ff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+/* Header Styles */
+header {
+    background: #ff6f61;
+    padding: 20px 0;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #333;
+}
+
+/* Home Section */
+.section.home {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.home-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff6f61;
+    transform: scale(1.05);
+}
+
+/* About Section */
+.section.about {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* Courses Section */
+.section.courses {
+    background: #e4f9f5;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.course-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+}
+
+.course-card h3 {
+    color: #ff6f61;
+    margin-bottom: 15px;
+}
+
+/* Staff Section */
+.section.staff {
+    background: #d1e8e2;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.staff-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.staff-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.staff-card:hover {
+    transform: scale(1.05);
+}
+
+.staff-card h3 {
+    color: #ff6f61;
+    margin-top: 15px;
+}
+
+/* Contact Section */
+.section.contact {
+    background: #f9f7f7;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.contact button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff6f61;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
