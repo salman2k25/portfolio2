@@ -1,3 +1,4 @@
+/* Base Reset */
 * {
     margin: 0;
     padding: 0;
@@ -62,6 +63,9 @@ hr {
 }
 
 .ps-content, .ws-content, .key-skill, .educaton-content, .honors-content, .reference-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin: 20px 10px;
 }
 
@@ -105,19 +109,18 @@ hr {
 /* Responsive Design */
 @media (max-width: 768px) {
     header, .ps-content, .ws-content, .key-skill, .educaton-content, .honors-content, .reference-content {
-        display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
     .img1 {
-        width: 80px;
-        height: 100px;
+        width: 90px;
+        height: 110px;
         margin-bottom: 10px;
     }
 
-    .hh1, .hhc, .psl, .wsl, .key-skill-left, .education-left, .reference-left, .honors-left,
+    .psl, .wsl, .key-skill-left, .education-left, .reference-left, .honors-left,
     .psr, .wsr, .key-skill-right, .honors-right, .education-middle, .reference-middle, .education-right, .reference-right {
         width: 100%;
         padding: 5px;
@@ -139,11 +142,16 @@ hr {
     }
 
     .hh1 h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .hh1 h2, .hhc p, .psl h2, .wsl h2, .key-skill-left h2, .education-left h2, .reference-left h2, .honors-left h2 {
-        font-size: 16px;
+        font-size: 15px;
+    }
+
+    .img1 {
+        width: 80px;
+        height: 100px;
     }
 
     .footer1 a {
@@ -153,5 +161,17 @@ hr {
 
     .footer1 p {
         font-size: 12px;
+    }
+
+    .ps-content, .ws-content, .key-skill, .educaton-content, .honors-content, .reference-content {
+        margin: 15px 5px;
+    }
+
+    hr {
+        margin: 8px 0;
+    }
+
+    .footer1 {
+        padding: 8px;
     }
 }
